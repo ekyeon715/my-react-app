@@ -1,0 +1,63 @@
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: blueviolet;
+}
+
+
+.inner-box {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.inputBox p {
+  text-align: center;
+}
+
+.button {
+  height: 21px;
+  margin-top: 53px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead tr{
+  border: 2px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: navy;
+  color: white;
+  text-align: center;
+  height: 40px;
+}
+
+tbody td{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+tbody td button {
+  background-color: red;
+  border: 0px;
+}
