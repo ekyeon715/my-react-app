@@ -17,7 +17,7 @@ const App = () => {
       bronze: bronze
     };
 
-    setCountries([...countries, newCountry]);
+    setCountries([...countries, newCountry].sort((a, b) => b.gold - a.gold));
   };
 
   const updateCountryHandler = () => {
@@ -36,7 +36,7 @@ const App = () => {
         return item;
       }
     });
-    setCountries(result);
+    setCountries(result.sort((a, b) => b.gold - a.gold));
   };
   // (2) 일치 할 경우에는 해당 객체의 골드,실버,브론즈의 밸류를 입력한 값으로 바꿔서 리턴
   // (3) 일치하지 않을 경우 그대로 리턴
@@ -46,7 +46,7 @@ const App = () => {
     const deletedCountry = countries.filter(function (country) {
       return country.id != id;
     });
-    // console.log(countries);
+    
     setCountries(deletedCountry);
   }
 
