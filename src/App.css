@@ -13,7 +13,6 @@
   color: blueviolet;
 }
 
-
 .inner-box {
   display: flex;
   gap: 20px;
@@ -39,19 +38,18 @@ table {
   width: 100%;
 }
 
-thead tr{
+thead tr {
   border: 2px solid #ddd;
   padding: 8px;
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
   background-color: navy;
   color: white;
   text-align: center;
   height: 40px;
 }
 
-tbody td{
+tbody td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
