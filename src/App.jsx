@@ -21,7 +21,7 @@ const App = () => {
   const addCountryHandler = (e) => {
     e.preventDefault();
     if (checkExistance()) {
-      alert("이미 등록된 국가입니다");
+      alert("이미 등록된 국가입니다.");
     } else {
       const newCountry = {
         id: new Date().getTime(),
@@ -43,14 +43,18 @@ const App = () => {
       silver: silver,
       bronze: bronze,
     };
-    const result = countries.map(function (item) {
-      if (item.country === country) {
-        return updatedCountry;
-      } else {
-        return item;
-      }
-    });
-    setCountries(result.sort((a, b) => b.gold - a.gold));
+    if (checkExistance()) {
+      const result = countries.map(function (item) {
+        if (item.country === country) {
+          return updatedCountry;
+        } else {
+          return item;
+        }
+      });
+      setCountries(result.sort((a, b) => b.gold - a.gold));
+    } else {
+      alert("등록되지 않은 국가입니다.");
+    }
   };
   // (2) 일치 할 경우에는 해당 객체의 골드,실버,브론즈의 밸류를 입력한 값으로 바꿔서 리턴
   // (3) 일치하지 않을 경우 그대로 리턴
