@@ -131,6 +131,7 @@ const App = () => {
           </tr>
         </thead>
         <tbody>
+          {countries.length ? null : <p>국가를 추가해주세요</p>}
           {countries.map((c) => (
             <tr key={c.id}>
               <td>{c.country}</td>
