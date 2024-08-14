@@ -36,16 +36,17 @@
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 20px;
+  table-layout: fixed;
 }
 
-thead tr {
+thead {
   border: 2px solid #ddd;
   padding: 8px;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: navy;
   color: white;
-  text-align: center;
   height: 40px;
 }
 
