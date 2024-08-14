@@ -16,6 +16,7 @@
 .inner-box {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .inputBox {
@@ -31,17 +32,18 @@
 .button {
   height: 21px;
   margin-top: 53px;
+  background-color: pink;
+  border: none;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   table-layout: fixed;
 }
 
 thead {
-  border: 2px solid #ddd;
   padding: 8px;
   padding-top: 12px;
   padding-bottom: 12px;
